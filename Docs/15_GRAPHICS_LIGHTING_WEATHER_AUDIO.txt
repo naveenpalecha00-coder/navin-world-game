@@ -1,0 +1,22 @@
+FEATURE PROMPT — REALISTIC VISUALS, WEATHER AND AUDIO
+
+VISUAL TARGET
+Create a high-fidelity original world using physically based materials, realistic scale, coherent art direction, detailed environments, believable vegetation, vehicle materials, interiors, lighting, and animation.
+
+LIGHTING
+Use the selected Unreal rendering features after testing on target platforms. PC may use higher-end lighting and effects; Android must use a supported scalable rendering path. Do not assume every UE5 desktop feature works on every phone.
+
+WEATHER
+Clear, cloudy, rain, fog, storms where appropriate, wet surfaces, puddles, wind, and weather transitions. Weather must affect visuals and ambience; only add gameplay effects if they are tested and fair.
+
+DAY/NIGHT
+Use a consistent time system with sunrise, sunset, night lighting, traffic light schedules, shop schedules, and ambient audio transitions.
+
+AUDIO
+Original or licensed music, city ambience, interiors, footsteps, vehicles, weather, UI, NPC voice, police sirens, and spatial audio. Track every audio license. Do not use unlicensed commercial game music.
+
+OPTIMIZATION
+LOD/HLOD, culling, texture streaming, light budgets, shadow distance, scalable effects, and profiling. Provide mobile fallback assets and settings.
+
+QA
+Capture comparable test scenes and measure frame time, memory, shader compilation, audio transitions, and thermal behavior on real devices.

@@ -1,0 +1,18 @@
+DETAILED IMPLEMENTATION PROMPT — SHOPS, SERVICES AND LEGAL JOBS
+
+Create meaningful legal activities and city services that make the world feel alive.
+
+SHOPS
+Clothing stores, food shops, convenience stores, vehicle dealerships, repair garages, electronics shops, and selected specialty stores. Every shop needs a real interaction and purchase flow before being listed as functional.
+
+SERVICES
+Taxi, vehicle repair, hospital treatment, property services, garage storage, public transport if implemented, and emergency services.
+
+LEGAL JOBS
+Delivery, taxi driving, courier work, maintenance tasks, rescue/service activities, and other original jobs. Each job needs start conditions, objective flow, reward, fail rules, and replay cooldown where appropriate.
+
+ECONOMY INTEGRATION
+All purchases and rewards must use the same validated economy system. Prevent duplicate charges, negative balances, and duplicate rewards.
+
+QA
+Test insufficient funds, inventory capacity, shop opening hours, mission interruptions, save/load, and mobile/PC controls.

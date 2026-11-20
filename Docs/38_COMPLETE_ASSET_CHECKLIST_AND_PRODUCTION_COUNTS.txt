@@ -1,0 +1,18 @@
+PROMPT — ASSET INVENTORY AND PRODUCTION TRACKER
+
+Create an asset inventory for the full game. Do not invent that assets exist; every entry must have a real status and owner.
+
+TRACK CATEGORIES
+World terrain, city skyline, modular buildings, enterable interiors, roads, bridges, tunnels, foliage, rocks, water, props, characters, clothing, animations, vehicles, vehicle interiors, weapons, UI, VFX, audio, music, voice, cinematics, icons, and localization.
+
+PER-ASSET FIELDS
+Asset ID, title, category, district/feature, creator, source, license, status, file path, engine version, LOD state, collision state, optimization state, platform support, review evidence, and dependencies.
+
+STATUSES
+PLANNED, BLOCKED, IN PRODUCTION, IMPORTED, INTEGRATED, OPTIMIZED, TESTED, APPROVED.
+
+QUALITY GATES
+No asset is APPROVED until scale, collision, materials, naming, license, performance, and integration have been reviewed.
+
+OUTPUT
+Generate a searchable CSV/JSON inventory and a human-readable report. Keep counts based on actual registered assets, not marketing estimates.

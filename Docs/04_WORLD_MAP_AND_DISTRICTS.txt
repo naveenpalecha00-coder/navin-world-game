@@ -1,0 +1,28 @@
+FEATURE PROMPT — COMPLETE OPEN WORLD MAP
+
+Design an original connected open world with three large fictional cities and a surrounding countryside. Give each city a unique architectural language, culture, skyline, road network, landmarks, and gameplay identity.
+
+CITY A — COASTAL METROPOLIS
+Downtown towers, marina, beaches, luxury residences, shopping district, nightlife, port, airport, highway loop, waterfront park, hotels, restaurants, and residential neighborhoods.
+
+CITY B — INDUSTRIAL / FINANCIAL CITY
+Financial district, banks, warehouses, factories, freight yard, dense neighborhoods, stadium, university, hospitals, police HQ, fire stations, and underground parking.
+
+CITY C — HILLSIDE / CULTURAL CITY
+Old town, modern suburbs, hillside roads, large botanical garden, museums, markets, rail station, lakefront, mountain access, and scenic viewpoints.
+
+COUNTRYSIDE
+Villages, farms, forests, rivers, lakes, waterfalls, hills, caves only if safely designed, rural roads, campgrounds, wildlife zones, and small service towns.
+
+MAP REQUIREMENTS
+- Establish world scale using travel-time targets and gameplay density, not arbitrary square-kilometer claims.
+- Create a readable world map, minimap, district names, roads, paths, points of interest, mission markers, owned properties, shops, and service locations.
+- Add discoverable landmarks and optional collectibles.
+- Ensure roads connect logically; add bridges, tunnels, intersections, traffic lights, sidewalks, and pedestrian crossings.
+- Each district needs a gameplay purpose and visual identity.
+- Include accessible routes and clear navigation cues.
+- Define which buildings are enterable, which have interiors, and which are exterior-only.
+- Use streaming and optimized detail; do not keep every district fully loaded.
+
+DELIVERABLES
+World map document, district list, landmark list, road hierarchy, streaming-cell plan, interior list, navigation design, and performance budget. Do not use a map copied from a commercial game.

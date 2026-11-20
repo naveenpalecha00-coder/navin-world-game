@@ -1,0 +1,21 @@
+DETAILED IMPLEMENTATION PROMPT — FICTIONAL BANK HEIST MISSIONS
+
+Design fictional, cinematic bank-heist missions strictly as game content. Do not include real-world bank security bypass procedures, real target research, or operational criminal guidance.
+
+MISSION STRUCTURE
+Create original mission stories with briefing, character roles, fictional objectives, alarms as game-state events, NPC reactions, escape sequence, police response, optional objectives, checkpoints, fail states, and rewards.
+
+GAMEPLAY OBJECTIVES
+Use abstract in-game interactions such as reaching marked areas, collecting mission items, protecting a teammate, escaping a search zone, or choosing a dialogue/route branch. Avoid replicating real bank layouts or real security procedures.
+
+PLAYER CHOICE
+Offer stealth-like, negotiation, distraction, or action-oriented fictional approaches only as abstract gameplay variations. Each route must have clear objectives and balanced consequences.
+
+WORLD REACTION
+Witnesses can report the incident through the game event system. Dispatch responds according to mission tuning. Civilians move to safe areas using navigation and behavior systems.
+
+MISSION QUALITY
+Each mission needs unique dialogue, original locations, mission scripting, objective markers, fail/retry behavior, reward validation, and QA.
+
+QA
+Test mission restart, player arrest, player death, teammate failure, streaming, save/load, objective ordering, and duplicate reward prevention.

@@ -1,0 +1,30 @@
+PROMPT — FULL GAME PRODUCTION ROADMAP
+
+Create a realistic production roadmap for the complete NAVIN WORLD scope. The final goal remains the complete game; milestones are internal quality gates and must not be misrepresented as the final product.
+
+PHASE 0 — FEASIBILITY
+Confirm team, PC/cloud build access, Unreal version, Android target devices, source-control plan, budget, asset licensing, and build storage. Identify risks.
+
+PHASE 1 — FOUNDATION
+Project architecture, player controller, camera, input, save system, settings, world streaming foundation, CI environment.
+
+PHASE 2 — CORE GAME SYSTEMS
+Vehicles, inventory, interaction, economy, property, mission framework, police/wanted system, NPC/traffic.
+
+PHASE 3 — WORLD CONTENT
+Three cities, countryside, parks, interiors, roads, points of interest, environment art, audio.
+
+PHASE 4 — FULL CONTENT
+Story missions, side activities, shops, banks, legal jobs, vehicle catalog, customization, character content.
+
+PHASE 5 — PLATFORM POLISH
+Android touch UI and scalable rendering; Windows UI, graphics, input, and packaging.
+
+PHASE 6 — QA AND OPTIMIZATION
+Performance, device compatibility, save integrity, bug fixing, accessibility, localization, security review.
+
+PHASE 7 — RELEASE
+Signed builds, checksums, GitHub Releases, download page, release notes, support and patch process.
+
+FOR EACH PHASE
+Define measurable entry criteria, tasks, owners, dependencies, risks, test evidence, exit criteria, and actual status. Do not invent completion dates or team capacity. Report the amount of work and assets realistically.

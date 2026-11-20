@@ -1,0 +1,21 @@
+FEATURE PROMPT — LIVING WORLD AI
+
+Create believable but performance-aware NPC systems.
+
+PEDESTRIANS
+Spawn by district and time of day. Support walking routes, crossing roads, sitting, shopping, conversations, reacting to events, fleeing danger, calling emergency services, and despawning safely outside relevant simulation ranges.
+
+TRAFFIC
+Use lane and road graph data. Vehicles obey traffic signals and basic right-of-way, avoid collisions, stop for pedestrians, react to emergency vehicles, and use district-specific traffic density. Prevent gridlock and impossible lane changes.
+
+WILDLIFE
+Add selected animals appropriate to each biome, with roaming, idle, flee, and ambient behavior. Avoid overpopulating areas.
+
+SCHEDULES
+Use lightweight time-of-day activity profiles. Simulate distant NPCs cheaply and activate detailed behavior near the player.
+
+PERFORMANCE
+Use spawn budgets, pooling, distance-based AI updates, significance systems, and safe streaming. Measure CPU, memory, and frame time.
+
+QA
+Test crowds in dense districts, traffic intersections, emergency response, streaming boundaries, save/load, and low-end mobile performance.

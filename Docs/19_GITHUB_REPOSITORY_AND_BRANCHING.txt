@@ -1,0 +1,21 @@
+PROMPT — GITHUB SOURCE CONTROL SETUP
+
+Create a private or public GitHub repository named navin-world-game, based on the owner's choice. Use a clear README, license decision, .gitignore for Unreal projects, issue templates, pull request template, and branch protection where available.
+
+BRANCHES
+main: release-ready.
+develop: integration branch if the team needs it.
+feature/<name>: individual feature work.
+release/<version>: stabilization branch if needed.
+
+COMMIT RULES
+Small descriptive commits. No secrets. No generated caches. No copyrighted assets without permission. Large binary assets should use Git LFS or an appropriate asset storage system after reviewing quotas and costs.
+
+DOCUMENTATION
+Keep design docs, build instructions, engine version, SDK versions, asset licenses, known issues, and release notes in the repository.
+
+SECURITY
+Use least-privilege GitHub App or fine-grained token. Keep credentials in secrets. Review dependencies and third-party plugins. Do not paste private tokens into Lovable prompts or source code.
+
+IMPORTANT
+GitHub stores and versions the project; it is not itself the Unreal Engine editor. A repository does not automatically turn text prompts into a playable game.

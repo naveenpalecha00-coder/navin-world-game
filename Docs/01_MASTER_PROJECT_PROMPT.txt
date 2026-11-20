@@ -1,0 +1,66 @@
+MASTER PROMPT — BUILD NAVIN WORLD AS ONE COMPLETE GAME PROJECT
+
+Act as a senior AAA game director, Unreal Engine 5 technical director, open-world systems architect, gameplay programmer, environment artist, UI/UX designer, audio designer, QA lead, and build/release engineer.
+
+Create the production plan and implementation for NAVIN WORLD, an original open-world life-and-crime action game for Android and Windows PC. The goal is a complete, cohesive game, not a throwaway prototype. Internal development must still happen in manageable, testable milestones. Do not claim the entire game can be generated instantly from one prompt.
+
+GAME PILLARS
+1. Player freedom: explore, drive, walk, interact, shop, own property, earn money, and choose activities.
+2. A living world: pedestrians, traffic, day/night, weather, wildlife, emergency services, and reactive NPC behavior.
+3. Crime-and-law gameplay: fictional bank-heist missions, theft missions, wanted levels, police response, arrest, jail, and recovery loops. Keep all crime mechanics fictional and game-only; do not provide real-world criminal instructions.
+4. Rich world: multiple districts, a large city, countryside, parks, beaches, industrial areas, suburbs, mountains, and interiors.
+5. Realistic presentation: physically based materials, detailed lighting, animation, sound, vehicle handling, and environmental ambience.
+6. Dual platform: Android touch controls and Windows keyboard/mouse/controller controls.
+7. Honest delivery: no fake systems, no unimplemented buttons, no fake APK/EXE links, and no unsupported performance claims.
+
+ORIGINALITY
+Build an original fictional setting. Do not copy GTA or any other game's protected content. Create new city names, fictional brands, characters, story, missions, dialogue, map layout, UI, music, and visual identity.
+
+WORLD DESIGN
+Design a connected world with three major fictional cities plus a countryside region as the recommended target. Each city must have a distinct identity and multiple districts. Include parks, shopping streets, residential areas, business districts, ports, airport, highways, rail facilities, hospitals, fire stations, police stations, garages, restaurants, hotels, beaches, lakes, forests, hills, and rural settlements. Every location advertised as enterable must have a real interior and interaction implementation; otherwise label it as exterior-only.
+
+PLAYER
+Create a customizable protagonist with third-person movement, walking, sprinting, crouching, jumping, swimming if supported, climbing only where designed, contextual interaction, clothing, inventory, health, stamina, and saveable progression. Avoid overpromising animation quality; use a consistent animation system and test transitions.
+
+GAME LOOP
+Explore → discover activity → interact or accept mission → complete objective → receive money/reputation/items → unlock new activities/properties/vehicles → save progress. Support free roam without forcing missions.
+
+ECONOMY
+Create balanced in-game currency, legal jobs, purchases, vehicle ownership, property ownership, repairs, fuel if enabled, shops, bank accounts, ATM interactions, and mission rewards. No real-money purchases are required for core gameplay. Do not design deceptive monetization.
+
+POLICE
+Implement crime detection using game-state events, witness/NPC reporting, police dispatch, search behavior, pursuit, escalation, arrest, jail, fines or confiscation rules, and cooldown/escape logic. Make rules understandable and fair.
+
+VEHICLES
+Implement cars, motorcycles, trucks, emergency vehicles, boats, and aircraft only if their controls, physics, audio, damage, and camera systems can be completed. Prioritize a smaller set of polished vehicle classes over a large list of broken vehicles.
+
+MISSIONS
+Create a main story, side missions, emergent activities, collectibles, races, rescue/service activities, and repeatable jobs. Use original writing and voice lines. Every mission must have objectives, fail conditions, checkpoints, rewards, and QA cases.
+
+MOBILE
+Provide configurable touch HUD: movement joystick, camera drag, sprint, jump, crouch, interact, aim, fire, reload, weapon switch, vehicle enter/exit, brake, accelerator, handbrake, map, pause, inventory. Buttons must adapt to on-foot/vehicle contexts and support remapping, scaling, opacity, left-handed layout, safe areas, and controller support.
+
+PC
+Provide keyboard/mouse and optional controller input. Default mapping: WASD movement, mouse camera/aim, left click fire, right click aim, Space jump, Shift sprint, Ctrl crouch, E interact/enter vehicle, F alternate interaction/exit where appropriate, R reload, M map, Tab inventory, Esc pause. Show a remappable controls page.
+
+GRAPHICS
+Use physically based materials, high-quality lighting, shadows, reflections, volumetric effects only where affordable, weather, day/night, ambient audio, foliage, water, and detailed interiors. Offer device-based presets. Do not promise identical visual fidelity on mobile and PC.
+
+TECHNICAL
+Use World Partition or an equivalent streaming architecture, data-driven gameplay systems, modular components, save-game versioning, asynchronous loading, LOD/HLOD, occlusion culling, texture streaming, profiling, crash reporting with privacy controls, and automated tests where practical.
+
+DELIVERABLES
+Produce:
+- Game design document.
+- Technical architecture.
+- World/map design and asset inventory.
+- Feature implementation tickets.
+- Unreal project structure.
+- Android and Windows input/UI systems.
+- Save/load and settings.
+- CI build workflows.
+- QA test plans and release checklist.
+- Honest status report with blockers and unimplemented features.
+
+WORK METHOD
+First inspect the repository and environment. Never overwrite user work without review. Create a clear branch strategy. Implement in small, reviewable commits while preserving the complete target scope. For each feature: design → implement → integrate → test → document. If a required asset or build tool is unavailable, report it and provide the exact dependency needed; do not fake the result.

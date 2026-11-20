@@ -1,0 +1,21 @@
+FEATURE PROMPT — PERFORMANCE AND DEVICE TIERS
+
+Create explicit tested performance tiers instead of claiming universal maximum graphics.
+
+ANDROID TIERS
+Low: conservative resolution, short view distance, simplified shadows, reduced crowds and traffic.
+Medium: balanced resolution, moderate view distance and effects.
+High: higher textures and effects on supported devices.
+Ultra: enabled only when GPU, RAM, thermal behavior, and sustained frame time support it.
+
+WINDOWS TIERS
+Low, Medium, High, Ultra, and custom. Allow resolution scale, frame cap, shadows, reflections, foliage, effects, post-processing, view distance, texture quality, and crowd density.
+
+TECHNIQUES
+World streaming, LOD/HLOD, occlusion culling, texture streaming, asset budgets, async loading, object pooling, AI update throttling, shader optimization, and profiling.
+
+MEASUREMENTS
+Record device/CPU/GPU/RAM, OS, resolution, graphics preset, average FPS, 1% low FPS, memory use, load time, thermal behavior, and crash rate. Never state a performance number without test evidence.
+
+RELEASE RULE
+Publish a device compatibility table. Unsupported phones should receive a clear warning rather than a false promise.

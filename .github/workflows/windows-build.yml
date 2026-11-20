@@ -1,0 +1,50 @@
+name: Windows PC Package Build (.exe)
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_configuration:
+        description: 'Build Configuration (Development, Shipping)'
+        required: true
+        default: 'Shipping'
+        type: choice
+        options:
+          - Shipping
+          - Development
+
+jobs:
+  build-windows:
+    name: Package Windows Game Client
+    runs-on: [self-hosted, windows, x64, ue5-builder] # Unreal Engine 5 requires self-hosted Windows runner with dedicated GPU
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Validate Unreal Engine 5 Environment
+        shell: pwsh
+        run: |
+          Write-Host "Verifying Unreal Engine Installation..."
+          if (-not (Test-Path "$env:UE_5_PATH\Engine\Build\BatchFiles\RunUAT.bat")) {
+            Write-Error "Unreal Engine 5 build tool (RunUAT) not found at expected path. Please configure self-hosted runner."
+            exit 1
+          }
+
+      - name: Cook and Package Windows Client
+        shell: pwsh
+        run: |
+          Write-Host "Packaging NAVIN WORLD for Windows ($env:BUILD_CONFIG)..."
+          # Example UAT command:
+          # & "$env:UE_5_PATH\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project="$PWD\Game\NavinWorld.uproject" -noP4 -platform=Win64 -clientconfig=$env:BUILD_CONFIG -cook -allmaps -build -stage -pak -archive -archivedirectory="$PWD\Build\Windows"
+
+      - name: Generate Checksums
+        shell: pwsh
+        run: |
+          Get-FileHash -Algorithm SHA256 Build\Windows\* | Out-File Build\Windows\SHA256SUMS.txt
+
+      - name: Upload Windows Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NavinWorld-Windows-${{ github.sha }}
+          path: Build/Windows/

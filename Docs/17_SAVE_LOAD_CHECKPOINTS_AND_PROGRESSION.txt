@@ -1,0 +1,18 @@
+FEATURE PROMPT — SAVE, LOAD AND PROGRESSION
+
+Implement robust save data with versioning and migration support.
+
+SAVE CONTENT
+Player location and state, inventory, money, bank balance, owned properties, vehicles and condition, mission progress, discovered locations, settings, world flags, and selected activity state.
+
+SAVE METHODS
+Manual save at valid points, autosave after safe milestones, checkpoint save during missions, and recovery from interrupted sessions. Avoid saving during unstable transitions.
+
+DATA SAFETY
+Use versioned serialization, validation, backup slot, corruption handling, and clear error messages. Do not store passwords or unrelated personal data.
+
+CROSS-PLATFORM
+Use a shared schema where practical. Do not promise cloud cross-save until a real authenticated backend and conflict resolution are implemented.
+
+QA
+Test fresh save, overwrite, multiple slots, interrupted save, corrupted save, game update migration, arrest, mission checkpoint, and platform differences.

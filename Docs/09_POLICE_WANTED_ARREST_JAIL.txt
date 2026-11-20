@@ -1,0 +1,24 @@
+FEATURE PROMPT — POLICE, WANTED LEVEL, PURSUIT AND JAIL
+
+Create a reactive fictional law-enforcement system.
+
+CRIME EVENTS
+Gameplay systems emit structured events when defined illegal actions occur. Each event has severity, location, witness visibility, evidence, and timestamp. Do not infer crimes from arbitrary player movement.
+
+DETECTION
+NPC witnesses can notice events within perception limits and report them. Cameras or alarms can be mission-specific. The system must be fair, explainable, and consistent.
+
+WANTED SYSTEM
+Use multiple escalation levels with clear UI feedback. Higher levels can trigger additional patrols, roadblocks, specialist units, search patterns, and air support only when appropriate to the game's scale.
+
+POLICE AI
+Patrol routes, investigate reports, search last known position, pursue vehicles, coordinate backup, use safe navigation, and disengage when search conditions are met. Avoid police teleporting directly beside the player.
+
+ARREST
+Police can stop and arrest the player when conditions are met. Add surrender/escape rules, arrest animation, transition to jail or processing, fines or item confiscation rules, and return-to-world flow.
+
+JAIL
+Create a playable or short interactive jail sequence, release rules, and persistent consequences. Do not trap the player in an unrecoverable state.
+
+QA
+Test line of sight, witness reporting, wanted escalation, pursuit navigation, vehicle chase, search timeout, arrest, jail release, save/load, and edge cases.

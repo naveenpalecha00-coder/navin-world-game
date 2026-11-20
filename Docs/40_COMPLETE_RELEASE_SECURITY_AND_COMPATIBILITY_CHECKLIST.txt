@@ -1,0 +1,24 @@
+PROMPT — FINAL SECURITY, COMPATIBILITY AND RELEASE GATE
+
+Before publishing a NAVIN WORLD release, perform a complete audit.
+
+PROJECT
+Verify engine version, plugins, licenses, repository status, branch, build scripts, and reproducibility.
+
+WINDOWS
+Test supported Windows versions, GPU drivers, controller/keyboard/mouse, display modes, install/uninstall if applicable, save location, antivirus false positives, and runtime dependencies.
+
+ANDROID
+Test supported Android versions, ABI, storage requirements, permissions, installation, app resume, touch layout, graphics presets, thermal behavior, and save persistence.
+
+SECURITY
+Scan dependencies, remove secrets, review third-party plugins, protect signing keys, verify download checksums, and ensure no debug/admin endpoints are exposed.
+
+CONTENT
+Check all advertised features against test evidence. Remove fake buttons, placeholder content, unlicensed assets, and misleading performance claims.
+
+RELEASE
+Require successful builds, QA approval, versioned notes, checksums, known issues, device requirements, and rollback plan. Publish only real artifacts.
+
+FINAL REPORT
+List tested devices, tested PC configurations, FPS measurements, memory use, crashes, known limitations, unimplemented features, and exact download assets. Never claim “all devices” or “zero bugs.”

@@ -1,0 +1,24 @@
+DETAILED IMPLEMENTATION PROMPT — HUMAN NPC BEHAVIOR AND SOCIAL AI
+
+Create believable fictional pedestrians and residents. AI must be robust, performance-aware, and designed for game simulation.
+
+NPC ARCHETYPES
+Residents, commuters, shoppers, workers, tourists, students, security staff, emergency responders, service workers, and mission characters. Each archetype has a data-driven schedule and behavior profile.
+
+DAILY SCHEDULE
+Define time-of-day routines such as leaving home, commuting, working, eating, shopping, socializing, exercising, and returning home. Use simplified simulation for distant NPCs and detailed behavior near the player.
+
+INTERACTIONS
+NPCs can greet, respond to contextual dialogue, use shops, sit, walk, cross roads, react to weather, notice disturbances, seek safety, call emergency services, and resume normal routines when safe.
+
+PERCEPTION
+Use bounded sight, hearing, and event perception. Avoid omniscient AI. NPC reactions should depend on distance, line of sight, sound level, context, and personality profile.
+
+DIALOGUE
+Use original short dialogue lines with localization support, subtitles, cooldowns, and non-repetitive selection. Do not imitate dialogue from existing commercial games or actors.
+
+TECHNICAL
+Use navigation meshes or verified navigation systems, behavior trees/state trees, smart objects, animation interfaces, pooling, distance-based updates, and spawn budgets. Prevent NPCs from walking through walls, getting stuck indefinitely, or spawning visibly in front of the player.
+
+QA
+Test crowded areas, narrow interiors, moving vehicles, weather changes, emergency events, streaming boundaries, and low-end device performance. Track CPU cost and AI update rates.

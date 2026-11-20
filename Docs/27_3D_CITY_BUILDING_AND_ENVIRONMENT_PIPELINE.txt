@@ -1,0 +1,24 @@
+DETAILED IMPLEMENTATION PROMPT — 3D CITY BUILDING AND ENVIRONMENT PIPELINE
+
+Build a reusable environment-production pipeline for the original NAVIN WORLD setting. This specification is for creating actual Unreal Engine environment assets, not merely a list of buildings.
+
+CITY KIT
+Create modular kits for roads, sidewalks, curbs, intersections, street lights, traffic signals, road signs, fences, walls, doors, windows, stairs, elevators where feasible, roofs, balconies, storefronts, parking structures, street furniture, and utility props. Each kit must use consistent scale, pivots, collision, material slots, naming, LODs, and texel-density rules.
+
+BUILDING CLASSES
+Create modular residential, commercial, office, industrial, civic, hospitality, retail, transport, and emergency-service buildings. Define a visual style guide per district. Each building asset must specify whether it is exterior-only, has a real interior, or supports a modular interior instance.
+
+ENVIRONMENT DENSITY
+Use authored landmarks near player routes and procedural or instanced repetition for distant background density. Avoid repetitive copy-paste appearance by varying facade modules, signs, props, vegetation, and lighting within performance budgets.
+
+ROADS AND NAVIGATION
+Build a road graph with lanes, intersections, sidewalks, crossings, traffic signal data, pedestrian paths, and emergency access. Validate that every drivable road connects correctly and that AI navigation can traverse it.
+
+PARKS AND NATURE
+Create parks with paths, benches, play areas, fountains, ponds, trees, grass, lighting, and ambient sound. Create forest, mountain, river, beach, lake, and rural kits with biome-specific materials and foliage.
+
+INTERIORS
+Create a modular interior kit for homes, shops, restaurants, banks, police stations, hospitals, hotels, garages, and selected public buildings. Include navigation collision, interaction points, lighting, audio zones, and streaming behavior.
+
+DELIVERABLES
+Asset specification sheets, modular kit list, district art bible, naming rules, collision rules, LOD plan, interior catalog, import checklist, and test map. No building should be called enterable until its interior is implemented and tested.

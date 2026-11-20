@@ -1,0 +1,23 @@
+FEATURE PROMPT — PLAYER HOME, PROPERTY OWNERSHIP AND INTERIORS
+
+Create a player-owned home system with a fully enterable starter home and expandable property ownership. The home must be a real gameplay space, not just a menu image.
+
+HOME FEATURES
+- Front door and interior transition without losing player state.
+- Living room, bedroom, kitchen, bathroom, storage, and garage where designed.
+- Interactable bed for optional time advance/save point.
+- Wardrobe for clothing changes.
+- Storage for selected inventory items.
+- Computer/phone interaction for in-game services.
+- Garage with owned vehicle selection and parking.
+- Furniture and decoration placement only if collision, saving, and placement validation are implemented.
+- Lighting and audio ambience.
+
+PROPERTY SYSTEM
+Buy, sell, rent, and own selected properties using in-game money. Show price, location, interior availability, parking capacity, and benefits. Prevent purchase if the player lacks funds. Save ownership persistently.
+
+WORLD INTERIORS
+Create a prioritized interior list: homes, shops, restaurants, police stations, hospital, bank, garage, hotel, mall, and selected offices. Do not label a building enterable until its interior and transition are implemented.
+
+QA
+Test entering/exiting, door collision, saving inside, loading inside, vehicle garage persistence, purchase validation, and missing-interior edge cases.

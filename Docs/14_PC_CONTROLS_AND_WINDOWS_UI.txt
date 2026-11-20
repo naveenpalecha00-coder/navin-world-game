@@ -1,0 +1,15 @@
+FEATURE PROMPT — WINDOWS PC INPUT AND UI
+
+Create a complete keyboard/mouse interface and optional controller support.
+
+DEFAULT MAPPINGS
+WASD move, mouse camera, left click fire, right click aim, Space jump, Shift sprint, Ctrl crouch, E interact/enter vehicle, R reload, M map, Tab inventory, Esc pause. Vehicle mappings should be contextual and fully remappable.
+
+UI
+Resolution selection, windowed/borderless/fullscreen, graphics presets, display selection, VSync, frame cap, subtitles, audio sliders, accessibility, control remapping, and save management.
+
+INPUT
+Use input contexts so menus, on-foot, vehicle, and gameplay do not conflict. Prevent mouse capture issues when menus open. Support mouse sensitivity, invert Y, controller dead zones, and vibration toggle.
+
+QA
+Test keyboard-only navigation, mouse capture, alt-tab, different resolutions, ultrawide if supported, controller hot-plug, and save/load.

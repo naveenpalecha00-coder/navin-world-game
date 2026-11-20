@@ -1,0 +1,18 @@
+PROMPT — REAL RELEASES AND DOWNLOAD EXPERIENCE
+
+Create a release process for Windows and Android.
+
+WINDOWS
+Package a real Windows build. Decide whether to distribute a packaged folder, ZIP, or installer. If an installer is provided, configure a trusted installer tool, app identity, install path, uninstall flow, and required runtime dependencies. Do not create a fake EXE wrapper around a website.
+
+ANDROID
+Provide a real signed APK for direct installation where appropriate, or AAB for a supported store workflow. Explain Android permission prompts and installation settings honestly.
+
+GITHUB RELEASE
+Create a versioned release only after CI succeeds and QA approves. Attach actual files, checksums, build notes, supported device requirements, known issues, and version number.
+
+DOWNLOAD WEBSITE
+Show platform-specific download cards only when the matching release asset exists. Display file size, version, release date, checksum, and system requirements. Verify URLs and handle unavailable assets gracefully.
+
+SAFETY
+Never tell users to disable security protections. Sign binaries where feasible and publish checksums. Do not promise universal compatibility.

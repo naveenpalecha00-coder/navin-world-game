@@ -1,0 +1,21 @@
+DETAILED IMPLEMENTATION PROMPT — WATER, OCEAN, RIVERS AND SWIMMING
+
+Create visually convincing and technically scalable water environments.
+
+WATER TYPES
+Ocean, beach shallows, lakes, rivers, ponds, fountains, waterfalls, and swimming pools. Each water body must have correct boundaries, collision, audio zones, and visual transitions.
+
+VISUALS
+Use reflections, waves, shoreline foam, underwater color and visibility, wet surfaces, and water interaction effects where supported. Provide lower-cost mobile rendering options.
+
+PLAYER INTERACTION
+Implement swimming only if the character animations, stamina/oxygen rules if any, camera, entry/exit transitions, and collision are complete. Define safe shore exits and prevent trapping the player underwater.
+
+VEHICLES
+Boats may be added with water buoyancy and steering only after a functional prototype is integrated and profiled. Do not advertise watercraft before controls and physics work.
+
+WORLD INTEGRATION
+Connect rivers and coastlines to terrain and road bridges. Ensure bridges, docks, beaches, and shore paths have valid collision and navigation.
+
+QA
+Test water entry/exit, shoreline transitions, rain, reflections, swimming controls, mobile performance, and save/load near water.

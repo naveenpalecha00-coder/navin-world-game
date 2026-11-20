@@ -1,0 +1,18 @@
+PROMPT — AUDIO, VOICE, LANGUAGE AND ACCESSIBILITY
+
+Create an original soundscape and inclusive UI.
+
+AUDIO
+Footsteps, clothing movement, traffic, engines, horns, brakes, doors, city ambience, nature, weather, interiors, mission cues, police sirens, UI sounds, and original music. Use spatial audio where supported.
+
+VOICE
+Original character dialogue and NPC barks. Use licensed or commissioned voice talent, or clearly labeled temporary recordings during development. Do not imitate a real actor without permission.
+
+LANGUAGES
+Plan English and Hindi first if the project team can support accurate localization. Keep all text in localization tables, support subtitles, and avoid hard-coded strings.
+
+ACCESSIBILITY
+Subtitle size/background, color contrast, remappable controls, adjustable sensitivity, camera shake toggle, motion blur toggle, readable UI, audio sliders, and color-independent alerts.
+
+QA
+Check audio mix, subtitle timing, localization overflow, text readability on small phones, and accessibility settings persistence.

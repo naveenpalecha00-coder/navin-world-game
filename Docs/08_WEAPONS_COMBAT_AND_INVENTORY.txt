@@ -1,0 +1,25 @@
+FEATURE PROMPT — FICTIONAL GAME COMBAT AND INVENTORY
+
+Implement fictional game-only combat mechanics. Do not provide real-world weapon construction, acquisition, or criminal instructions.
+
+SYSTEMS
+- Item inventory with categories, stack rules, capacity, weight only if useful, and sorting.
+- Fictional weapon definitions with damage values, fire modes, reload timing, recoil, spread, range, sound, animation, and ammo rules.
+- Equip/unequip, aim, fire, reload, switch, holster, and safe interaction handling.
+- Hit detection and damage feedback.
+- Non-lethal alternatives or avoidance options where appropriate.
+- Health, armor if included, healing items, and respawn/arrest handling.
+- Weapon wheel or selection UI.
+- Context-sensitive controls for touch and PC.
+
+BALANCE
+Use data-driven values. Prevent exploits such as firing while in invalid states, infinite ammo unless a defined game mode enables it, or animation-state desynchronization.
+
+MOBILE
+Aim and fire buttons, adjustable sensitivity, optional aim assist with transparent settings, reload, weapon switch, and left-handed HUD option.
+
+PC
+Mouse aim, click fire, right-click aim, R reload, number keys or wheel to switch. All bindings remappable.
+
+QA
+Test hit registration, reload cancellation, vehicle transitions, save/load, touch layout, input latency, and performance.

@@ -1,0 +1,18 @@
+PROMPT — ORIGINAL ASSET PIPELINE AND LICENSE REGISTER
+
+Plan original or properly licensed production assets for a large world.
+
+ASSET CATEGORIES
+Characters, clothing, animations, vehicles, vehicle interiors, weapons, buildings, furniture, roads, foliage, terrain, rocks, water, signs, props, UI icons, sounds, music, voice, VFX, and cinematics.
+
+FOR EACH ASSET TRACK
+Unique ID, name, category, creator, source URL or internal author, license, attribution requirements, modification rights, redistribution rights, platform restrictions, file format, texture sizes, polygon/LOD budgets, and project usage.
+
+QUALITY
+Use consistent scale, pivots, collision, material naming, texture compression, LODs, and import settings. Validate asset performance on target devices.
+
+NO COPYRIGHT INFRINGEMENT
+Do not extract or reuse GTA 6 or other commercial game assets, maps, logos, music, dialogue, or characters. Use original designs or assets with clear redistribution rights.
+
+DELIVERABLE
+Asset register, production schedule, asset acceptance checklist, and license audit.

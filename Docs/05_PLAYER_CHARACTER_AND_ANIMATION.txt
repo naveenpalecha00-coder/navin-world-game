@@ -1,0 +1,21 @@
+FEATURE PROMPT — PLAYER CHARACTER
+
+Build a polished third-person player character system.
+
+MOVEMENT
+Idle, walk, jog, sprint, crouch, jump, land, turn, stop, interact, swim only if implemented, and context-sensitive movement. Provide acceleration/deceleration, slope handling, step-up behavior, fall damage rules if enabled, and responsive camera control.
+
+ANIMATION
+Use a coherent animation blueprint/state machine with locomotion blend spaces, start/stop animations, turning, upper-body actions, aim offsets, weapon transitions, interaction montages, and vehicle enter/exit. Avoid snapping between states. Use motion matching only if the asset and performance budget justify it.
+
+CUSTOMIZATION
+Character appearance, face/hair options, body presets, clothing slots, accessories, saved outfits, and preview. Ensure clothing does not visibly clip through body meshes in supported combinations.
+
+GAMEPLAY
+Health, stamina, optional hunger/thirst only if they add meaningful gameplay, inventory, money display, interaction prompts, and saveable progression.
+
+ACCESSIBILITY
+Adjust camera sensitivity, invert axes, camera shake, motion blur, subtitles, text size, and control remapping.
+
+QA
+Test movement on slopes, stairs, uneven ground, interiors, vehicles, low frame rates, controller, touch input, and save/load. Record animation bugs and known limitations.

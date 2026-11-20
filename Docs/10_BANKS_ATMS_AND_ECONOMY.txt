@@ -1,0 +1,24 @@
+FEATURE PROMPT — IN-GAME BANKS, ATMS AND ECONOMY
+
+Create a fictional game economy. All bank robbery activity is a fictional mission mechanic and must not teach real-world criminal methods.
+
+PLAYER FINANCE
+Wallet, bank account, transaction history, deposits, withdrawals, transfers between owned accounts only if needed, ATM interactions, and clear balance display. Persist all balances securely in the game save.
+
+BANK LOCATIONS
+Create enterable bank interiors with lobby, teller counter, customer area, security room only as a fictional set piece, and mission-specific spaces. Advertise interiors only when built.
+
+ECONOMY
+Define currency sources: missions, legal jobs, races, services, exploration rewards, and approved activities. Define sinks: vehicles, properties, clothing, repairs, food, and optional services. Balance prices against expected player earnings.
+
+ROBBERY MISSIONS
+Create scripted fictional heist missions with narrative objectives, alarm state, NPC reactions, police response, escape objectives, fail states, checkpoints, and rewards. Keep the implementation abstract and game-specific. Do not include real-world security bypass details.
+
+SHOPS
+Buy/sell items, validate money, show price and quantity, confirm purchases, and update inventory immediately.
+
+ANTI-EXPLOIT
+Validate transactions on the authoritative game state. Prevent duplicate rewards, negative balances, save tampering where feasible, and mission reward replay.
+
+QA
+Test deposits, withdrawals, insufficient funds, purchases, mission rewards, interruption, save/load, and transaction consistency.

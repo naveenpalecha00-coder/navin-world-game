@@ -1,0 +1,28 @@
+FEATURE PROMPT — ANDROID TOUCH CONTROLS AND UI
+
+Create a complete touch-first control scheme for Android.
+
+ON FOOT HUD
+Left virtual joystick; right-side camera drag; sprint; jump; crouch; interact; aim; fire; reload; weapon switch; map; inventory; pause; contextual action button.
+
+VEHICLE HUD
+Steering buttons or virtual wheel; accelerator; brake/reverse; handbrake; camera; horn; headlights; exit vehicle.
+
+UX REQUIREMENTS
+- Buttons repositionable and resizable.
+- Opacity slider.
+- Left-handed layout.
+- Safe-area and notch support.
+- Multi-touch support.
+- Sensitivity settings.
+- Optional aim assist.
+- Haptic feedback toggle.
+- Clear pressed states and readable icons.
+- HUD adapts between on-foot, vehicle, menus, and missions.
+- Pause menu must release input correctly.
+
+ANDROID DEVICE SUPPORT
+Detect capabilities and offer Low, Medium, High, and Ultra presets only where supported. Include resolution scale, shadows, effects, foliage, view distance, texture quality, and frame-rate target. Never force unsupported settings.
+
+QA
+Test multiple screen sizes, aspect ratios, touch combinations, accidental edge gestures, background/resume, controller, and thermal throttling.

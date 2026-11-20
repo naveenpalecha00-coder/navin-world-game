@@ -1,0 +1,21 @@
+PROMPT — QA AND TESTING PLAN
+
+Create a test strategy covering gameplay, world streaming, controls, UI, save/load, missions, economy, AI, vehicles, performance, crashes, and platform packaging.
+
+TEST LEVELS
+- Unit tests for isolated logic.
+- Functional tests for feature behavior.
+- Integration tests for connected systems.
+- Automation tests for repeatable gameplay flows.
+- Manual playtests for feel, readability, difficulty, and immersion.
+- Device testing for real Android hardware.
+- PC testing across supported GPU/CPU/RAM tiers.
+
+BUG REPORT FORMAT
+Title, build version, platform/device, steps to reproduce, expected result, actual result, frequency, severity, logs, screenshot/video, and workaround.
+
+RELEASE GATES
+No critical crash, save corruption, broken main-story progression, unusable controls, fake UI, or missing advertised download. Known limitations must be listed.
+
+STATUS
+PLANNED, IN DEVELOPMENT, IMPLEMENTED, TESTED, RELEASED. “Implemented” is not the same as “tested.”

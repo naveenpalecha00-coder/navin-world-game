@@ -1,0 +1,21 @@
+DETAILED IMPLEMENTATION PROMPT — WEATHER, SEASONS AND WORLD CLOCK
+
+Build a coherent world clock and weather simulation.
+
+WORLD CLOCK
+Use a configurable day length, sunrise/sunset, lighting transitions, shop schedules, traffic density profiles, NPC routines, and mission time conditions. Provide a time display only if it is part of the intended UI.
+
+WEATHER TYPES
+Clear, overcast, light rain, heavy rain, fog, wind, and storms where supported. Seasonal variation may change foliage, lighting, ambient audio, and selected world dressing.
+
+TRANSITIONS
+Weather should transition smoothly using authored or data-driven curves. Avoid abrupt lighting or material changes.
+
+GAMEPLAY EFFECTS
+Only add wet-road traction, visibility changes, or NPC behavior changes when they are tuned, readable, and tested. Weather should not randomly make controls unfair.
+
+PERFORMANCE
+Use scalable particle counts, effects distance, shadow settings, reflection quality, and mobile fallbacks. Avoid expensive effects on devices that cannot sustain them.
+
+QA
+Test time transitions, weather changes, interiors, vehicle surfaces, water, mission triggers, and device thermal behavior.

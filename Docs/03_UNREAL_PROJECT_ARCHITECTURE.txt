@@ -1,0 +1,32 @@
+UNREAL ENGINE PROJECT ARCHITECTURE PROMPT
+
+Set up a maintainable Unreal Engine 5 project named NavinWorld. Confirm the exact engine version and platform support before locking dependencies.
+
+SUGGESTED MODULES
+- NWCore: game instance, game mode, player state, save versioning, settings.
+- NWCharacter: third-person movement, interaction, animation interfaces.
+- NWWorld: world partition, districts, streaming sources, world data.
+- NWVehicles: vehicle base classes, handling profiles, enter/exit, damage.
+- NWPolice: crime events, wanted state, dispatch, pursuit, arrest.
+- NWEconomy: wallet, bank account, shops, property and ownership.
+- NWMissions: mission definitions, objectives, checkpoints, rewards.
+- NWInventory: items, equipment, weapons, clothing.
+- NWUI: HUD, menus, map, inventory, settings, accessibility.
+- NWAI: pedestrian, traffic, service and wildlife behavior.
+- NWAudio: ambience, vehicle audio, UI and spatial sound.
+- NWOnline (optional future module): networking architecture only after offline game is stable.
+
+ARCHITECTURE RULES
+Prefer data-driven definitions (Data Assets/Data Tables) for vehicles, items, missions, districts, shops, and difficulty. Use interfaces and components to avoid giant monolithic Blueprints. Use C++ for performance-critical or reusable systems and Blueprints for designer iteration. Keep gameplay systems decoupled and testable.
+
+WORLD STREAMING
+Use World Partition or a verified equivalent. Divide the world into cells and districts. Define streaming sources for player, vehicles, and fast travel. Use HLOD, LODs, occlusion, texture streaming, and distance-based simulation. Avoid loading the entire world at full detail simultaneously.
+
+ASSET RULES
+Track source and license for every third-party asset. Use Nanite/Lumen only where supported and profiled. Provide fallback settings for mobile. Keep source assets organized and avoid committing generated caches, DerivedDataCache, Intermediate, Saved, or packaged build folders unless there is a specific reason.
+
+PROJECT CONFIGURATION
+Document engine version, plugins, SDK versions, Android NDK/JDK requirements, Windows toolchain, build configurations, input mappings, rendering paths, and known platform limitations.
+
+OUTPUT
+Generate the project skeleton, module dependency diagram, naming conventions, folder conventions, coding standards, and a dependency checklist. Do not claim project compiles until a real editor or command-line build succeeds.

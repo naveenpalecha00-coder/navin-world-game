@@ -1,0 +1,18 @@
+DETAILED IMPLEMENTATION PROMPT — ANIMATION AND INTERACTION LIBRARY
+
+Create a unified animation and interaction library for player, NPCs, and vehicles.
+
+PLAYER ANIMATIONS
+Locomotion, start/stop, turns, crouch, jump, landing, climbing only where designed, swimming if supported, aiming, firing, reloading, weapon switching, using a phone, opening doors, entering/exiting vehicles, sitting, shopping, and arrest.
+
+NPC ANIMATIONS
+Walking, running, idle variations, conversations, sitting, shopping, crossing roads, reacting to events, fleeing, calling for help, and emergency responder tasks.
+
+INTERACTION FRAMEWORK
+Use interaction interfaces with range checks, line-of-sight where required, context prompts, animation triggers, and cancellation behavior. Avoid hard-coded interactions that cannot be reused.
+
+QUALITY
+Prevent foot sliding, clipping, abrupt state changes, frozen characters, and mismatched hand placement. Add animation LOD and simplified distant behavior.
+
+QA
+Test transitions at variable frame rates, with different character body/clothing presets, inside vehicles, in crowded areas, and on mobile.

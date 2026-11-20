@@ -1,0 +1,21 @@
+FEATURE PROMPT — VEHICLES AND DRIVING
+
+Implement a polished vehicle framework, prioritizing reliable handling over a huge number of unfinished vehicles.
+
+VEHICLE CLASSES
+Cars, SUVs, motorcycles, vans, trucks, police cars, ambulances, fire engines, boats, and aircraft only when fully supported. Each vehicle definition includes handling profile, mass, traction, acceleration, braking, steering, damage, fuel rules if enabled, audio, camera, lights, and interaction points.
+
+DRIVING
+Enter/exit with safe placement checks, ignition, acceleration, braking, reverse, handbrake, steering, camera modes, collision response, wheel suspension, tire grip, and speed display. Support traffic rules and vehicle recovery.
+
+OWNERSHIP
+Purchase, save, garage, customize paint and selected parts, repair, and retrieve owned vehicles. Persist vehicle condition and location safely.
+
+MOBILE CONTROLS
+Contextual accelerator, brake/reverse, steering mode (buttons or virtual wheel), handbrake, camera, horn, headlights, and exit. Allow layout customization.
+
+PC CONTROLS
+WASD or configurable driving controls, mouse camera, handbrake, horn, headlights, and enter/exit mapping. Controller support where possible.
+
+QA
+Test different surfaces, slopes, collisions, traffic, garages, mobile touch, keyboard, controller, frame-rate changes, and save/load. Never advertise a vehicle class that has no functioning control and physics setup.

@@ -1,0 +1,18 @@
+PROMPT — ANDROID APK WORKFLOW
+
+Create a GitHub Actions workflow for Android packaging after Unreal project and Android toolchain are configured.
+
+REQUIREMENTS
+- Use a compatible Linux or Windows build environment with the verified Unreal Engine version.
+- Install/configure the exact Android SDK, NDK, JDK and required platform/build tools supported by that engine version.
+- Verify project Android settings and package identifier.
+- Restore required LFS assets.
+- Run project validation and automation tests.
+- Package the Android build for the agreed ABI/device support.
+- Sign release APK/AAB using secrets stored outside the repository.
+- Never commit keystores or passwords.
+- Upload only actual successful build artifacts.
+- Generate checksum, version number, build logs and release notes.
+- Fail if SDK/NDK, signing, compilation, cooking, packaging or tests fail.
+
+Do not call an unsigned debug package a final public release. Document whether the output is APK or AAB and the intended distribution route.

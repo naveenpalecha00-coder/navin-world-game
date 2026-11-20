@@ -1,0 +1,38 @@
+PROMPT FOR LOVABLE — NAVIN WORLD DEVELOPMENT PORTAL
+
+Build a polished responsive web application called NAVIN WORLD Studio. This is a project dashboard and production-control portal for the Unreal Engine game; it is NOT the game engine and must never claim to compile Unreal projects unless connected to a real build service.
+
+DESIGN
+Premium game-studio dashboard, clean dark charcoal interface with restrained electric-blue accent, responsive for Android and desktop. Include accessible typography, loading/error/empty states, keyboard navigation, and mobile layouts.
+
+PAGES
+1. Login/register (use a real configured auth provider; never fake authentication).
+2. Project overview: title, description, current version, target platforms, progress based only on actual tracked tasks.
+3. Feature board: World, Player, Vehicles, Police, Economy, Missions, UI, Audio, Graphics, Android, Windows, QA.
+4. Feature detail: purpose, requirements, dependencies, implementation status, test evidence, assets, owner, version.
+5. Build center: list actual GitHub Actions runs using authenticated backend integration; show queued/running/success/failure from real API responses. Never fabricate build statuses.
+6. Releases: show actual GitHub Releases and downloadable assets returned by GitHub API. Do not show a download button if no asset exists.
+7. Asset register: asset name, category, origin, license, creator, file reference, usage permissions.
+8. QA center: test cases, device/PC model, OS version, result, evidence, date, known issues.
+9. Settings: project repository URL, branch, notification preferences, role management.
+
+INTEGRATION
+Use a secure server-side integration or GitHub App for repository and workflow access. Never put GitHub personal access tokens in browser code, local storage, or public source. Use environment secrets and least-privilege permissions. If integration credentials are missing, show a clear setup screen and do not pretend the connection is active.
+
+FUNCTIONALITY
+- Create and edit feature tickets.
+- Filter by platform, category, status, priority.
+- Link a feature to commits, pull requests, workflow runs, release assets, and test evidence.
+- Search all documentation.
+- Export project status as JSON/CSV.
+- Keep an audit trail for important changes.
+- Support roles: Owner, Developer, Tester, Viewer.
+
+DATA MODEL
+Project, Feature, Task, Milestone, Asset, LicenseRecord, BuildRun, Release, TestCase, TestResult, DeviceProfile, User, AuditEvent.
+
+QUALITY RULES
+Use real persisted data. Validate forms. Handle API rate limits and errors. Add tests. No decorative controls that do nothing. Do not generate an APK or EXE in the browser. Explain that Unreal Engine builds happen in the configured build environment.
+
+FIRST SCREEN
+Show NAVIN WORLD project title, platform chips Android/Windows, milestone overview, latest real build, open blockers, and a clear “Open GitHub Repository” action. Use the repository URL only after the user configures it.

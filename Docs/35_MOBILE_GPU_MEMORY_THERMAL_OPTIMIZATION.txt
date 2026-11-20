@@ -1,0 +1,21 @@
+DETAILED IMPLEMENTATION PROMPT — ANDROID GPU, MEMORY AND THERMAL OPTIMIZATION
+
+Build Android quality tiers based on real device capability. Do not promise identical high-end visuals on all phones.
+
+DEVICE PROFILING
+Detect supported graphics features, memory class, CPU/GPU capability, display resolution, and thermal state using supported platform APIs. Provide a safe default preset and let the player adjust settings.
+
+RENDERING
+Use a verified Android-compatible Unreal rendering path. Configure texture formats, shader permutations, shadow quality, effects, foliage density, view distance, resolution scale, and frame cap.
+
+MEMORY
+Set texture and streaming budgets, avoid excessive simultaneous asset loads, pool reusable actors, unload distant content, and monitor memory spikes. Handle low-memory callbacks gracefully where supported.
+
+THERMAL
+Offer sustainable frame-rate caps and quality reduction options. Do not force maximum settings when a phone is overheating.
+
+INPUT AND BATTERY
+Keep touch input responsive, avoid unnecessary background work, and pause or reduce activity appropriately when the app is suspended.
+
+TEST MATRIX
+Test multiple real device tiers, Android versions, screen ratios, GPU vendors, storage conditions, long play sessions, heat, background/resume, and installation. Record exact results.

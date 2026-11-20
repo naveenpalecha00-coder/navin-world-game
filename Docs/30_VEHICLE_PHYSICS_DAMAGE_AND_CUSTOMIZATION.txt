@@ -1,0 +1,21 @@
+DETAILED IMPLEMENTATION PROMPT — VEHICLE PHYSICS, DAMAGE AND CUSTOMIZATION
+
+Create a reusable vehicle simulation with different handling classes.
+
+PHYSICS
+Define mass, center of mass, suspension, tire friction, steering response, engine torque curve, gears, braking, traction, drivetrain, and surface response. Tune each vehicle class independently. Avoid identical handling across every vehicle.
+
+DAMAGE
+Implement visual damage and gameplay consequences appropriate to the rating and tone: dents, broken lights, damaged tires, engine performance changes, smoke effects, and repair needs. Keep damage readable and performant.
+
+CUSTOMIZATION
+Paint, wheel styles, selected body parts, window tint, performance upgrades, and interior options only when the corresponding assets and systems exist. Purchases must update the actual vehicle.
+
+GARAGE
+Store owned vehicles, retrieve them, save their condition, prevent duplicate ownership exploits, and handle full garage capacity.
+
+AUDIO
+Use vehicle-specific engine layers, gear changes, tire sounds, suspension impacts, horns, indicators, and interior/exterior mix.
+
+QA
+Test collisions, slopes, wet roads, off-road surfaces, vehicle rollover, water boundaries, garage storage, upgrades, and save/load on PC and Android.

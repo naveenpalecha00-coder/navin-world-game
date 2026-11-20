@@ -1,0 +1,25 @@
+# Unreal Engine .gitignore
+Binaries/*
+Plugins/*/Binaries/*
+Intermediate/*
+Plugins/*/Intermediate/*
+Saved/*
+DerivedDataCache/*
+Build/*
+.vscode/
+.vs/
+*.VC.db
+*.opendb
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+*.xcconfig
+*.idea/
+.DS_Store
+*.apk
+*.aab
+*.exe
+*.msi
+*.zip
+*.tar.gz

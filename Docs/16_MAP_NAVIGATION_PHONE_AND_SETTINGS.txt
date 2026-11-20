@@ -1,0 +1,16 @@
+FEATURE PROMPT — MAP, PHONE, NAVIGATION AND SETTINGS
+
+MAP
+Full-screen world map with districts, roads, discovered locations, shops, banks, police stations, owned homes, garages, mission markers, filters, waypoint setting, and minimap. Use original cartography and icons.
+
+PHONE
+In-game phone with contacts, mission messages, map shortcut, banking app, vehicle/property listings, settings shortcuts, and notifications. Every app shown must have a real implemented function.
+
+SETTINGS
+Graphics, audio, controls, sensitivity, accessibility, subtitles, language, camera, HUD layout, save management, and privacy options.
+
+NAVIGATION
+Waypoint route, distance, compass, minimap rotation option, and route recalculation. Do not show false navigation paths.
+
+QA
+Test map interaction, waypoint, streaming transitions, UI scaling, touch and mouse controls, settings persistence, and save/load.

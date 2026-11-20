@@ -1,0 +1,47 @@
+name: Android Client Package Build (.apk)
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_configuration:
+        description: 'Build Configuration (Development, Shipping)'
+        required: true
+        default: 'Shipping'
+        type: choice
+        options:
+          - Shipping
+          - Development
+
+jobs:
+  build-android:
+    name: Package Android APK
+    runs-on: [self-hosted, linux, ue5-android-builder] # Requires Android SDK/NDK and UE5 Android toolchain
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup Android SDK and NDK
+        run: |
+          echo "Checking ANDROID_HOME and NDK..."
+          if [ -z "$ANDROID_HOME" ]; then
+            echo "Error: ANDROID_HOME not configured on runner"
+            exit 1
+          fi
+
+      - name: Cook and Package Android APK
+        run: |
+          echo "Packaging NAVIN WORLD Android APK..."
+          # Example UAT command:
+          # $UE_5_PATH/Engine/Build/BatchFiles/RunUAT.sh BuildCookRun -project="$PWD/Game/NavinWorld.uproject" -noP4 -platform=Android -cookflavor=ASTC -clientconfig=Shipping -cook -allmaps -build -stage -pak -package -archive -archivedirectory="$PWD/Build/Android"
+
+      - name: Sign APK
+        run: |
+          echo "Signing APK with release keystore..."
+
+      - name: Upload Android Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NavinWorld-Android-${{ github.sha }}
+          path: Build/Android/

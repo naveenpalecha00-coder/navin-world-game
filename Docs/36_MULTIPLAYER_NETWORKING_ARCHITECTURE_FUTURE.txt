@@ -1,0 +1,21 @@
+DETAILED IMPLEMENTATION PROMPT — OPTIONAL FUTURE MULTIPLAYER ARCHITECTURE
+
+Design an architecture that can support future online multiplayer without pretending multiplayer already exists. Prioritize a complete and reliable single-player game first.
+
+DESIGN QUESTIONS
+Define maximum players, session type, authoritative server model, persistence, matchmaking, regions, anti-cheat approach, voice/chat moderation, privacy, reporting, and operational cost before implementation.
+
+NETWORKING
+Use server-authoritative validation for important state such as inventory, currency, mission rewards, ownership, and player position where appropriate. Do not trust client-only money or reward calculations.
+
+SYNC
+Define replication frequency, relevancy, dormancy, prediction, reconciliation, and bandwidth budgets. Avoid replicating every NPC in the world to every player.
+
+SECURITY
+Use secure authentication, rate limits, abuse prevention, server validation, and privacy-conscious telemetry. Never put server credentials in the client.
+
+COST AND OPERATIONS
+Estimate server hosting, bandwidth, storage, support, moderation, and live operations. Do not claim free unlimited multiplayer.
+
+DELIVERABLE
+Network design document, risk register, server prototype plan, test plan, and clear status. Multiplayer UI must remain hidden or labeled “not available” until implemented.

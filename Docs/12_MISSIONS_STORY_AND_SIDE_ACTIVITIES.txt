@@ -1,0 +1,29 @@
+FEATURE PROMPT — MAIN STORY, SIDE MISSIONS AND ACTIVITIES
+
+Write an original story with new characters, locations, dialogue, and fictional organizations. Do not imitate copyrighted GTA characters, missions, dialogue, or plotlines.
+
+MISSION TYPES
+Main story missions, side quests, delivery jobs, taxi work, rescue activities, races, driving challenges, collectibles, photography, property tasks, and emergent world events.
+
+MISSION DATA
+Each mission must define:
+- Unique ID and title.
+- Narrative summary.
+- Start location and prerequisites.
+- Objectives and optional objectives.
+- Checkpoints.
+- Fail conditions and restart behavior.
+- NPC/vehicle/world dependencies.
+- Rewards and unlocks.
+- Save/resume behavior.
+- Localization and subtitles.
+- QA test cases.
+
+FREE ROAM
+The player must be able to ignore missions and explore. Avoid forced mission interruptions except for clearly communicated story sequences.
+
+MISSION UI
+Show objective, waypoint, distance, progress, pause/restart options, and accessibility settings. Use map markers consistently.
+
+QA
+Test mission start, completion, failure, checkpoint, player death/arrest, world streaming, save/load, and replay prevention.

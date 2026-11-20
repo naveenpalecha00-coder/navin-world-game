@@ -1,0 +1,18 @@
+DETAILED IMPLEMENTATION PROMPT — OPTIONAL ACCOUNT AND CLOUD SAVE
+
+Implement cloud save only with a real backend, authenticated user identity, secure access rules, and conflict handling.
+
+LOCAL FIRST
+The game must support local save/load without requiring an online account unless a store/platform requirement makes it necessary.
+
+CLOUD SAVE
+Define upload/download, versioning, conflict resolution, offline queue, retry, backup, account recovery, and cross-platform compatibility. Show sync status accurately.
+
+SECURITY
+Use short-lived tokens, server-side authorization, encrypted transport, least privilege, and secure secret storage. Never store passwords in plaintext or expose admin credentials in the game client.
+
+PRIVACY
+Collect only necessary data. Provide clear privacy notice and account deletion/export process if accounts are offered. Do not collect precise location or unrelated personal data.
+
+QA
+Test offline play, expired sessions, duplicate devices, conflict, corrupted cloud data, account logout, and service outage. Do not claim cloud save until end-to-end tests pass.

@@ -1,0 +1,23 @@
+PROMPT — WINDOWS BUILD WORKFLOW
+
+Create a GitHub Actions workflow for Windows packaging only after a valid Unreal Engine project and build environment exist.
+
+REQUIREMENTS
+- Use a Windows runner or configured self-hosted Windows build machine with the required Unreal Engine installation and toolchain.
+- Verify engine version and project file.
+- Checkout correct branch and LFS assets if used.
+- Configure secrets securely if signing or private asset access is required.
+- Run project validation and automation tests.
+- Package the Windows build in the selected configuration.
+- Capture logs and upload build artifacts only after successful completion.
+- Generate SHA-256 checksum and release metadata.
+- Fail visibly on missing engine, missing SDK, compilation errors, failed tests, or packaging errors.
+
+DO NOT
+- Claim a standard hosted runner includes Unreal Engine by default.
+- Fake a successful build.
+- upload an empty or placeholder EXE.
+- expose signing keys or tokens.
+- publish release assets before the build succeeds.
+
+DOCUMENT the runner setup, storage needs, build time, licensing and maintenance costs.
